@@ -3,7 +3,11 @@
 
 #include <QTcpSocket>
 
+/*!
+ * \brief Класс отвечающий за корректную работу сокетов
+ */
 class Socket {
+
 public:
     QTcpSocket sk;
 

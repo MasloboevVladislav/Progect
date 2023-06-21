@@ -17,9 +17,8 @@
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -27,66 +26,65 @@ QT_BEGIN_NAMESPACE
 class Ui_Task
 {
 public:
-    QComboBox *comboBoxCategories;
-    QPushButton *pushButtonGetTask;
-    QWidget *layoutWidget;
-    QVBoxLayout *verticalLayout;
-    QLabel *labelTask;
-    QLabel *label_Variant;
+    QPlainTextEdit *plainTextEditAnswer;
+    QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout;
+    QPushButton *pushButtonGetTask;
+    QComboBox *comboBoxCategories;
+    QLabel *labelTask;
+    QPlainTextEdit *plainTextEditVariant;
     QLabel *label;
     QDialogButtonBox *buttonBox;
-    QLineEdit *lineEditAnswer;
 
     void setupUi(QDialog *Task)
     {
         if (Task->objectName().isEmpty())
             Task->setObjectName("Task");
-        Task->resize(400, 300);
-        comboBoxCategories = new QComboBox(Task);
-        comboBoxCategories->setObjectName("comboBoxCategories");
-        comboBoxCategories->setGeometry(QRect(20, 10, 181, 23));
-        pushButtonGetTask = new QPushButton(Task);
-        pushButtonGetTask->setObjectName("pushButtonGetTask");
-        pushButtonGetTask->setGeometry(QRect(230, 10, 131, 22));
-        layoutWidget = new QWidget(Task);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 50, 361, 231));
-        verticalLayout = new QVBoxLayout(layoutWidget);
-        verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        labelTask = new QLabel(layoutWidget);
-        labelTask->setObjectName("labelTask");
-
-        verticalLayout->addWidget(labelTask);
-
-        label_Variant = new QLabel(layoutWidget);
-        label_Variant->setObjectName("label_Variant");
-
-        verticalLayout->addWidget(label_Variant);
-
-        horizontalLayout = new QHBoxLayout();
+        Task->resize(449, 420);
+        Task->setLayoutDirection(Qt::RightToLeft);
+        plainTextEditAnswer = new QPlainTextEdit(Task);
+        plainTextEditAnswer->setObjectName("plainTextEditAnswer");
+        plainTextEditAnswer->setGeometry(QRect(10, 260, 431, 126));
+        plainTextEditAnswer->setLayoutDirection(Qt::LeftToRight);
+        plainTextEditAnswer->setLineWrapMode(QPlainTextEdit::NoWrap);
+        horizontalLayoutWidget = new QWidget(Task);
+        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
+        horizontalLayoutWidget->setGeometry(QRect(10, 0, 431, 31));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
-        label = new QLabel(layoutWidget);
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButtonGetTask = new QPushButton(horizontalLayoutWidget);
+        pushButtonGetTask->setObjectName("pushButtonGetTask");
+        pushButtonGetTask->setLayoutDirection(Qt::LeftToRight);
+
+        horizontalLayout->addWidget(pushButtonGetTask);
+
+        comboBoxCategories = new QComboBox(horizontalLayoutWidget);
+        comboBoxCategories->setObjectName("comboBoxCategories");
+        comboBoxCategories->setLayoutDirection(Qt::LeftToRight);
+
+        horizontalLayout->addWidget(comboBoxCategories);
+
+        labelTask = new QLabel(Task);
+        labelTask->setObjectName("labelTask");
+        labelTask->setGeometry(QRect(10, 40, 431, 41));
+        labelTask->setLayoutDirection(Qt::LeftToRight);
+        labelTask->setAutoFillBackground(true);
+        plainTextEditVariant = new QPlainTextEdit(Task);
+        plainTextEditVariant->setObjectName("plainTextEditVariant");
+        plainTextEditVariant->setGeometry(QRect(10, 100, 431, 126));
+        plainTextEditVariant->setLayoutDirection(Qt::LeftToRight);
+        plainTextEditVariant->setLineWrapMode(QPlainTextEdit::NoWrap);
+        plainTextEditVariant->setReadOnly(true);
+        label = new QLabel(Task);
         label->setObjectName("label");
-
-        horizontalLayout->addWidget(label);
-
-        buttonBox = new QDialogButtonBox(layoutWidget);
+        label->setGeometry(QRect(10, 240, 32, 16));
+        buttonBox = new QDialogButtonBox(Task);
         buttonBox->setObjectName("buttonBox");
+        buttonBox->setGeometry(QRect(280, 390, 171, 22));
+        buttonBox->setLayoutDirection(Qt::RightToLeft);
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
-
-        horizontalLayout->addWidget(buttonBox);
-
-        lineEditAnswer = new QLineEdit(layoutWidget);
-        lineEditAnswer->setObjectName("lineEditAnswer");
-
-        horizontalLayout->addWidget(lineEditAnswer);
-
-
-        verticalLayout->addLayout(horizontalLayout);
-
 
         retranslateUi(Task);
         QObject::connect(buttonBox, &QDialogButtonBox::accepted, Task, qOverload<>(&QDialog::accept));
@@ -100,7 +98,6 @@ public:
         Task->setWindowTitle(QCoreApplication::translate("Task", "Dialog", nullptr));
         pushButtonGetTask->setText(QCoreApplication::translate("Task", "\320\237\320\276\320\273\321\203\321\207\320\270\321\202\321\214 \320\267\320\260\320\264\320\260\320\275\320\270\320\265", nullptr));
         labelTask->setText(QString());
-        label_Variant->setText(QString());
         label->setText(QCoreApplication::translate("Task", "\320\236\321\202\320\262\320\265\321\202:", nullptr));
     } // retranslateUi
 

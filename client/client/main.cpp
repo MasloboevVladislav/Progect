@@ -7,7 +7,12 @@ int main(int argc, char *argv[]) // Запускает все остальные
 {
     QApplication a(argc, argv);
     MainWindow w;
-    //ExtraFunction f;
+
+    if (w.isError)
+    {
+        return 0;
+    }
+
     w.show();
     return a.exec();
 }

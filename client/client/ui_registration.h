@@ -42,7 +42,7 @@ public:
     {
         if (Registration->objectName().isEmpty())
             Registration->setObjectName("Registration");
-        Registration->resize(400, 262);
+        Registration->resize(401, 265);
         label = new QLabel(Registration);
         label->setObjectName("label");
         label->setGeometry(QRect(120, 10, 201, 18));
@@ -53,6 +53,8 @@ public:
         gridLayout->setObjectName("gridLayout");
         reg_pas = new QLineEdit(groupBox);
         reg_pas->setObjectName("reg_pas");
+        reg_pas->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData);
+        reg_pas->setEchoMode(QLineEdit::Password);
 
         gridLayout->addWidget(reg_pas, 1, 1, 1, 1);
 
@@ -63,6 +65,7 @@ public:
 
         reg_pas_repeat = new QLineEdit(groupBox);
         reg_pas_repeat->setObjectName("reg_pas_repeat");
+        reg_pas_repeat->setEchoMode(QLineEdit::Password);
 
         gridLayout->addWidget(reg_pas_repeat, 2, 1, 1, 1);
 

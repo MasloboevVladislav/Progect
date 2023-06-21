@@ -264,6 +264,7 @@ debug/moc_extrafunction.cpp: extrafunction.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.3/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/Qt/6.4.3/mingw_64/include/QtCore/QString \
 		mainwindow.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -289,7 +290,7 @@ debug/moc_extrafunction.cpp: extrafunction.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qpromise.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.3/mingw_64/bin/moc.exe
-	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Мага/Desktop/programm6.5/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/Мага/Desktop/programm6.5/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include extrafunction.h -o debug\moc_extrafunction.cpp
+	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/omlet/Desktop/programm7.3/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/omlet/Desktop/programm7.3/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include extrafunction.h -o debug\moc_extrafunction.cpp
 
 debug/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QMainWindow \
@@ -450,7 +451,7 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qpromise.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.3/mingw_64/bin/moc.exe
-	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Мага/Desktop/programm6.5/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/Мага/Desktop/programm6.5/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
+	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/omlet/Desktop/programm7.3/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/omlet/Desktop/programm7.3/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
 
 debug/moc_registration.cpp: registration.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QDialog \
@@ -591,7 +592,7 @@ debug/moc_registration.cpp: registration.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qnativeinterface.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.3/mingw_64/bin/moc.exe
-	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Мага/Desktop/programm6.5/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/Мага/Desktop/programm6.5/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include registration.h -o debug\moc_registration.cpp
+	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/omlet/Desktop/programm7.3/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/omlet/Desktop/programm7.3/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include registration.h -o debug\moc_registration.cpp
 
 debug/moc_task.cpp: task.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QDialog \
@@ -730,9 +731,10 @@ debug/moc_task.cpp: task.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.3/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/Qt/6.4.3/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.3/mingw_64/bin/moc.exe
-	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Мага/Desktop/programm6.5/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/Мага/Desktop/programm6.5/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include task.h -o debug\moc_task.cpp
+	C:\Qt\6.4.3\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/omlet/Desktop/programm7.3/client/client/debug/moc_predefs.h -IC:/Qt/6.4.3/mingw_64/mkspecs/win32-g++ -IC:/Users/omlet/Desktop/programm7.3/client/client -IC:/Qt/6.4.3/mingw_64/include -IC:/Qt/6.4.3/mingw_64/include/QtWidgets -IC:/Qt/6.4.3/mingw_64/include/QtGui -IC:/Qt/6.4.3/mingw_64/include/QtNetwork -IC:/Qt/6.4.3/mingw_64/include/QtSql -IC:/Qt/6.4.3/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include task.h -o debug\moc_task.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -907,6 +909,7 @@ debug/extrafunction.o: extrafunction.cpp ui_extrafunction.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.3/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/Qt/6.4.3/mingw_64/include/QtCore/QString \
 		mainwindow.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -933,7 +936,6 @@ debug/extrafunction.o: extrafunction.cpp ui_extrafunction.h \
 		Registration.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qmessagebox.h \
-		C:/Qt/6.4.3/mingw_64/include/QtCore/QString \
 		socket.h \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/QTcpSocket \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/qtcpsocket.h \
@@ -1109,7 +1111,8 @@ debug/main.o: main.cpp C:/Qt/6.4.3/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/QCoreApplication \
 		extrafunction.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QDialog \
-		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qdialog.h
+		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.4.3/mingw_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
 debug/mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -1273,6 +1276,7 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		extrafunction.h \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.4.3/mingw_64/include/QtCore/QString \
 		task.h \
 		socket.h \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/QTcpSocket \
@@ -1594,6 +1598,7 @@ debug/task.o: task.cpp task.h \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.3/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.3/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/Qt/6.4.3/mingw_64/include/QtCore/QString \
 		ui_task.h \
 		socket.h \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/QTcpSocket \
@@ -1602,7 +1607,11 @@ debug/task.o: task.cpp task.h \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/qtnetwork-config.h \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/qtnetworkexports.h \
 		C:/Qt/6.4.3/mingw_64/include/QtNetwork/qabstractsocket.h \
-		C:/Qt/6.4.3/mingw_64/include/QtNetwork/qhostaddress.h
+		C:/Qt/6.4.3/mingw_64/include/QtNetwork/qhostaddress.h \
+		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QErrorMessage \
+		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qerrormessage.h \
+		C:/Qt/6.4.3/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.3/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\task.o task.cpp
 
 debug/moc_extrafunction.o: debug/moc_extrafunction.cpp 

@@ -4,16 +4,16 @@
 #include <QErrorMessage>
 #include <QMessageBox>
 
-Task::Task(QWidget *parent) : // Вызов окна с заданием
+Task::Task(QString _log, QWidget *parent) : // Вызов окна с заданием
     QDialog(parent),
     ui(new Ui::Task)
 {
     ui->setupUi(this);
-
+    log = _log;
     Socket::GetInstance()->sk.write("ctrl:names"); // Возможность вывода задания через поля ввода текста
     Socket::GetInstance()->sk.waitForReadyRead(3000);
     QString buf = Socket::GetInstance()->sk.readAll();
-    QStringList categories = buf.split("&");
+    QStringList categories = buf.trimmed().split("\t");
     ui->comboBoxCategories->addItems(categories);
 }
 
@@ -38,16 +38,16 @@ void Task::on_pushButtonGetTask_clicked() // Выводит выбранный �
 
     ui->labelTask->setText(GetTaskTemplate(name));
 
-    QString cmd = "ctrl:task&" + name;
+    QString cmd = "ctrl:task&" + name+"&"+log;
     Socket::GetInstance()->sk.write(cmd.toUtf8());
     Socket::GetInstance()->sk.waitForReadyRead(3000);
     QString buf = Socket::GetInstance()->sk.readAll();
-    ui->label_Variant->setText(buf);
+    ui->plainTextEditVariant->document()->setPlainText(buf);
 }
 
-void Task::on_buttonBox_accepted() // Принимает данные из поля ввода текста
+void Task::on_buttonBox_accepted() // Принимает данные из поля ввода ответа
 {
-    QString cmd = "ctrl:answer&" + ui->lineEditAnswer->text();
+    QString cmd = "ctrl:answer&" + ui->plainTextEditAnswer->toPlainText()+"&"+log;
     Socket::GetInstance()->sk.write(cmd.toUtf8());
     Socket::GetInstance()->sk.waitForReadyRead(3000);
     QString buf = Socket::GetInstance()->sk.readAll(); // Сравнение с правильным ответом

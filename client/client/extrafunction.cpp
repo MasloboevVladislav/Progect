@@ -6,12 +6,13 @@
 #include "socket.h"
 
 Socket *Socket::instance;
-
-ExtraFunction::ExtraFunction(QWidget *parent) :
+ExtraFunction::ExtraFunction(MainWindow *main, QWidget *parent) :
+    f_window(main),
     QDialog(parent),
     ui(new Ui::ExtraFunction)
 {
     ui->setupUi(this);
+    isAuthorized = false;
 }
 
 ExtraFunction::~ExtraFunction()
@@ -32,7 +33,9 @@ void ExtraFunction::on_pushButton_clicked() // Авторизация
 
     if (buf == "true")
     {
-        hide(); // Закрытие окна при успешной авторизации
+        isAuthorized = true;
+        f_window->setlog(login);
+        close(); // Закрытие окна при успешной авторизации
     }
     else
     {

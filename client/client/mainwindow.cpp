@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent) // Создание основного �
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    isError = false;
     ui->setupUi(this);
     connect(&Socket::GetInstance()->sk, &QTcpSocket::readyRead, this, &MainWindow::slotReadyRead); // Ожидание ввода данных
     connect(&Socket::GetInstance()->sk, &QTcpSocket::disconnected, this, &MainWindow::ClientDisconnected); // клиент отключился (закрыл UI)
@@ -30,11 +31,15 @@ void MainWindow::Connect() // Подключение UI к серверу
            return;
         }
     }
-// Пропуск уже прочитанного сокета
+// Пропуск чтения данных в slotReadyRead
     skip_read = true;
-    ExtraFunction authorisation;
+    ExtraFunction authorisation(this);
     authorisation.setModal(true);
     authorisation.exec();
+    if (authorisation.isAuthorized == false)
+    {
+        isError = true;
+    }
     skip_read = false;
 }
 
@@ -86,7 +91,7 @@ void MainWindow::ClientDisconnected() // Выводится сообщение �
 void MainWindow::on_pushButton_3_clicked() // При нажатии кнопки перебрасывает на окно с заданием
 {
     skip_read = true;
-    Task task;
+    Task task(log);
     task.setModal(true);
     task.exec();
     skip_read = false;
@@ -95,7 +100,6 @@ void MainWindow::on_pushButton_3_clicked() // При нажатии кнопки
 
 void MainWindow::on_pushButton_4_clicked() // Вывод статистики
 {
-    QString cmd = "ctrl:stat";
+    QString cmd = "ctrl:stat&"+log;
     Socket::GetInstance()->sk.write(cmd.toUtf8());
 }
-
